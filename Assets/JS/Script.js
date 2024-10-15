@@ -14,9 +14,27 @@ const Game = {
 
         const alphabet = "aaaaabcdeeeeefghiiiiijklmnooooopqrstuuuuuvwxyz";
 
+        let random_letters = [];
+
         this.generated_letters = new Array(3).fill().map(function(){
 
-            const random_index = Math.floor(Math.random() * alphabet.length);
+            let random_index = 0;
+
+            while(true)
+            {
+
+                random_index = Math.floor(Math.random() * alphabet.length);
+
+                if(!random_letters.includes(alphabet[random_index]))
+                {
+
+                    random_letters.push(alphabet[random_index]);
+
+                    break;
+
+                }
+                
+            }
 
             return alphabet[random_index];
 
@@ -115,7 +133,7 @@ form.addEventListener("submit", async function(event){
 
     const form_fields = new FormData(event.target);
 
-    if(await Game.Validate_Word(form_fields.get("answer")))
+    if(await Game.Validate_Word(form_fields.get("answer").toLowerCase()))
     {
 
         score.innerText = Game.score;

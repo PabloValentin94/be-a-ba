@@ -132,7 +132,17 @@ form {
 
 }
 
-form input {
+form #interaction {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+form #interaction input {
 
     border: 1px solid #000000;
     border-radius: 5px;
@@ -140,6 +150,22 @@ form input {
     font-size: 20px;
     text-align: center;
     padding: 10px;
+
+}
+
+form #interaction button {
+
+    height: 40px;
+    width: 40px;
+    background-color: #0538C1;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 10px;
+    cursor: pointer;
 
 }
 
