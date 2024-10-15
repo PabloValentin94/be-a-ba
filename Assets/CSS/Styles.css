@@ -152,18 +152,9 @@ body {
 
 }
 
-#game form #interaction {
+#game form input {
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-
-}
-
-#game form #interaction input {
-
+    max-width: 100%;
     border: 1px solid #000000;
     border-radius: 5px;
     outline: none;
@@ -173,7 +164,26 @@ body {
 
 }
 
-#game form #interaction button {
+#game form #error {
+
+    font-size: 20px;
+    color: #FF0000;
+    text-align: center;
+    visibility: hidden;
+
+}
+
+#game form #interaction {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+#game form #interaction #help {
 
     height: 40px;
     width: 40px;
@@ -189,16 +199,7 @@ body {
 
 }
 
-#game form #error {
-
-    font-size: 20px;
-    color: #FF0000;
-    text-align: center;
-    visibility: hidden;
-
-}
-
-#game form button {
+#game form #interaction #send {
 
     background-color: transparent;
     border: 2px solid #000000;
@@ -213,7 +214,7 @@ body {
 
 }
 
-#game form button:hover {
+#game form #interaction #send:hover {
 
     background-color: #000000;
     color: #FFFFFF;
