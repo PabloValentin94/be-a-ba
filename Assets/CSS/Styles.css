@@ -42,7 +42,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: transparent;
     border: 5px solid #000000;
     border-radius: 20px;
@@ -88,12 +88,14 @@ body {
 
 #plate #identification {
 
-    height: 200px;
+    height: auto;
     width: 100%;
+    min-height: 200px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     background-color: transparent;
 
 }
