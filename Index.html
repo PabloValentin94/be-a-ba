@@ -18,49 +18,74 @@
 
     <body>
 
-        <div id="score">
+        <section id="game">
 
-            <h2> Pontos: </h2>
+            <div id="score">
 
-            <h2 id="points"> 0 </h2>
-
-        </div>
-
-        <div id="plate">
-
-            <section id="nacionality">
-
-                <h2> Brasil </h2>
-
-                <figure> <img src="./Assets/Images/Brasil.png" alt="Brasil"> </figure>
-
-            </section>
-
-            <section id="identification">
-
-                <div class="letter"> <p> ? </p> </div>
-                <div class="letter"> <p> ? </p> </div>
-                <div class="letter"> <p> ? </p> </div>
-
-            </section>
-
-        </div>
-
-        <form action="#" method="post">
-
-            <div id="interaction">
-
-                <input type="text" id="answer" name="answer" placeholder="Insira a palavra aqui..." autocomplete="off" required>
-
-                <button title="Ajuda" id="help" type="button"> ? </button>
-                
-            </div>
-
-            <p id="error"> A palavra digitada não existe ou já foi utilizada! </p>
+                <h2> Pontos: </h2>
     
-            <button type="submit"> Enviar </button>
+                <h2 id="points"> 0 </h2>
+    
+            </div>
+    
+            <div id="plate">
+    
+                <section id="nacionality">
+    
+                    <h2> Brasil </h2>
+    
+                    <figure> <img src="./Assets/Images/Brasil.png" alt="Brasil"> </figure>
+    
+                </section>
+    
+                <section id="identification">
+    
+                    <div class="letter"> <p> ? </p> </div>
+                    <div class="letter"> <p> ? </p> </div>
+                    <div class="letter"> <p> ? </p> </div>
+    
+                </section>
+    
+            </div>
+    
+            <form action="#" method="post">
+    
+                <div id="interaction">
+    
+                    <input type="text" id="answer" name="answer" placeholder="Insira a palavra aqui..." autocomplete="off" required>
+    
+                    <button title="Ajuda" id="help" type="button"> ? </button>
+                    
+                </div>
+    
+                <p id="error"> A palavra digitada não existe ou já foi utilizada! </p>
+        
+                <button type="submit"> Enviar </button>
+    
+            </form>
 
-        </form>
+        </section>
+
+        <section id="rules">
+
+            <h1> Como Jogar: </h1>
+
+            <p> Dado as 3 letras dentro da placa de carro, digite, no campo, palavras que contenham as três letras. 
+                Digitando uma palavra existente na API utilizada, que contenha as 3 letras, você ganha um ponto. 
+                Tente fazer o máximo de pontos possíveis. </p>
+
+            <h1> Única Regra: </h1>
+
+            <p> Não serão aceitas palavras repetidas ou que não existam na API. </p>
+
+            <h1> Observação: </h1>
+
+            <p> Caso queira tentar com outras letras ou não existam palavras possíveis, atualize o navegador. O placar 
+                será redefinido após isso. </p>
+
+            <button id="ok"> Entendi </button>
+
+        </section>
         
     </body>
 

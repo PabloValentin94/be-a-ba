@@ -108,6 +108,8 @@ const input = document.getElementById("answer");
 
 const error = document.getElementById("error");
 
+const rules = document.getElementById("rules");
+
 // Eventos.
 
 window.onload = function(){
@@ -127,7 +129,7 @@ window.onload = function(){
 
 }
 
-form.addEventListener("submit", async function(event){
+form.onsubmit = async function(event){
 
     event.preventDefault();
 
@@ -153,4 +155,16 @@ form.addEventListener("submit", async function(event){
 
     }
 
-});
+};
+
+document.getElementById("help").onclick = function(){
+
+    rules.style.transform = "translateY(0%)";
+
+}
+
+document.getElementById("ok").onclick = function(){
+
+    rules.style.transform = "translateY(100%)";
+
+}

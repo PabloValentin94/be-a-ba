@@ -1,3 +1,5 @@
+/* Estilos: */
+
 * {
 
     box-sizing: border-box;
@@ -11,19 +13,36 @@ body {
 
     height: 100vh;
     width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #FFFFFF;
+    overflow: hidden;
+
+}
+
+#game, #rules {
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 25px;
-    background-color: #FFFFFF;
     padding: 15px;
     overflow-x: hidden;
     overflow-y: auto;
 
 }
 
-#score {
+#game #score {
 
     display: flex;
     flex-direction: row;
@@ -33,7 +52,7 @@ body {
 
 }
 
-#plate {
+#game #plate {
 
     height: auto;
     width: 550px;
@@ -50,7 +69,7 @@ body {
 
 }
 
-#plate #nacionality {
+#game #plate #nacionality {
 
     height: 50px;
     width: 100%;
@@ -63,14 +82,15 @@ body {
 
 }
 
-#plate #nacionality h2 {
+#game #plate #nacionality h2 {
 
     color: #FFFFFF;
     text-transform: uppercase;
+    text-align: center;
 
 }
 
-#plate #nacionality figure {
+#game #plate #nacionality figure {
 
     height: 40px;
     width: 40px;
@@ -78,7 +98,7 @@ body {
 
 }
 
-#plate #nacionality figure img {
+#game #plate #nacionality figure img {
 
     height: 100%;
     width: 100%;
@@ -86,7 +106,7 @@ body {
 
 }
 
-#plate #identification {
+#game #plate #identification {
 
     height: auto;
     width: 100%;
@@ -100,7 +120,7 @@ body {
 
 }
 
-#plate #identification .letter {
+#game #plate #identification .letter {
 
     height: 85px;
     width: 85px;
@@ -112,7 +132,7 @@ body {
 
 }
 
-#plate #identification .letter p {
+#game #plate #identification .letter p {
 
     font-size: 50px;
     color: #000000;
@@ -122,7 +142,7 @@ body {
 
 }
 
-form {
+#game form {
 
     display: flex;
     flex-direction: column;
@@ -132,17 +152,17 @@ form {
 
 }
 
-form #interaction {
+#game form #interaction {
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 15px;
 
 }
 
-form #interaction input {
+#game form #interaction input {
 
     border: 1px solid #000000;
     border-radius: 5px;
@@ -153,7 +173,7 @@ form #interaction input {
 
 }
 
-form #interaction button {
+#game form #interaction button {
 
     height: 40px;
     width: 40px;
@@ -169,7 +189,7 @@ form #interaction button {
 
 }
 
-form #error {
+#game form #error {
 
     font-size: 20px;
     color: #FF0000;
@@ -178,7 +198,7 @@ form #error {
 
 }
 
-form button {
+#game form button {
 
     background-color: transparent;
     border: 2px solid #000000;
@@ -193,9 +213,69 @@ form button {
 
 }
 
-form button:hover {
+#game form button:hover {
 
     background-color: #000000;
     color: #FFFFFF;
+
+}
+
+#rules {
+
+    background-color: rgba(0, 0, 0, 0.85);
+    transform: translateY(100%);
+    transition: 1s;
+
+}
+
+#rules h1 {
+
+    color: #FFFF00;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+#rules p {
+
+    width: 600px;
+    max-width: 100%;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+
+#rules button {
+
+    background-color: transparent;
+    border: 2px solid #FFFF00;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFF00;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+#rules button:hover {
+
+    background-color: #FFFF00;
+    color: #000000;
+
+}
+
+/* Responsividade: */
+
+@media (max-width: 767px) {
+
+    #game, #rules {
+
+        justify-content: flex-start;
+
+    }
 
 }
