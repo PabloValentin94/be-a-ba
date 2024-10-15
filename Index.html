@@ -12,17 +12,49 @@
 
         <script defer type="text/javascript" src="./Assets/JS/Main.js">  </script>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
-
-        <title> Be a Bá </title>
+        <title> Bê a Bá </title>
 
     </head>
 
     <body>
 
-        
+        <div id="score">
+
+            <h2> Pontos: </h2>
+
+            <h2> 0 </h2>
+
+        </div>
+
+        <div id="plate">
+
+            <section id="nacionality">
+
+                <h2> Brasil </h2>
+
+                <figure> <img src="./Assets/Images/Brasil.png" alt="Brasil"> </figure>
+
+            </section>
+
+            <section id="identification">
+
+                <div class="letter"> <p> ? </p> </div>
+                <div class="letter"> <p> ? </p> </div>
+                <div class="letter"> <p> ? </p> </div>
+
+            </section>
+
+        </div>
+
+        <form action="#">
+
+            <input type="text" id="answer" placeholder="Insira a palavra aqui..." required>
+
+            <p id="error"> A palavra digitada não existe ou já foi utilizada! </p>
+    
+            <button type="submit"> Enviar </button>
+
+        </form>
         
     </body>
 

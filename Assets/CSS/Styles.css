@@ -1,0 +1,173 @@
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    background-color: #FFFFFF;
+    padding: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+#score {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+#plate {
+
+    height: auto;
+    width: 550px;
+    min-height: 250px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 5px solid #000000;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+#plate #nacionality {
+
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0538C1;
+    padding: 0 15px 0 15px;
+
+}
+
+#plate #nacionality h2 {
+
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+}
+
+#plate #nacionality figure {
+
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+
+}
+
+#plate #nacionality figure img {
+
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+#plate #identification {
+
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+
+}
+
+#plate #identification .letter {
+
+    height: 85px;
+    width: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 15px;
+
+}
+
+#plate #identification .letter p {
+
+    font-size: 50px;
+    color: #000000;
+    font-weight: bolder;
+    text-align: center;
+    padding: 15px;
+
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+form input {
+
+    border: 1px solid #000000;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+
+}
+
+form #error {
+
+    font-size: 20px;
+    color: #FF0000;
+    text-align: center;
+    visibility: hidden;
+
+}
+
+form button {
+
+    background-color: transparent;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+form button:hover {
+
+    background-color: #000000;
+    color: #FFFFFF;
+
+}
