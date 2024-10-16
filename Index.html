@@ -18,9 +18,9 @@
 
     <body>
 
-        <section id="game">
+        <section id="game" class="flex-center">
 
-            <div id="score">
+            <div id="score" class="flex-center">
 
                 <h2> Pontos: </h2>
     
@@ -40,33 +40,32 @@
     
                 <section id="identification">
     
-                    <div class="letter"> <p> ? </p> </div>
-                    <div class="letter"> <p> ? </p> </div>
-                    <div class="letter"> <p> ? </p> </div>
+                    <div class="letter flex-center"> <p> ? </p> </div>
+                    <div class="letter flex-center"> <p> ? </p> </div>
+                    <div class="letter flex-center"> <p> ? </p> </div>
     
                 </section>
     
             </div>
     
-            <form action="#" method="post">
+            <form class="flex-center" action="#" method="post">
 
                 <input type="text" id="answer" name="answer" placeholder="Insira a palavra aqui..." autocomplete="off" required>
     
                 <p id="error"> A palavra digitada não existe na API ou já foi utilizada! Tente outra. </p>
 
-                <div id="interaction">
+                <button id="send" class="flex-center" type="submit"> Enviar </button>
 
-                    <button title="Ajuda" id="help" type="button"> ? </button>
-    
-                    <button id="send" type="submit"> Enviar </button>
-                    
-                </div>
+                <button title="Ajuda" id="help" class="flex-center" type="button"> Ajuda </button>
+
+                <button title="Recarregar página" id="reload" class="flex-center" type="button"> Recarregar </button>
+
     
             </form>
 
         </section>
 
-        <section id="rules">
+        <section id="rules" class="flex-center">
 
             <h1> Como Jogar: </h1>
 
@@ -80,10 +79,10 @@
 
             <h1> Observação: </h1>
 
-            <p> Caso queira tentar com outras letras ou não existam palavras possíveis, atualize o navegador. O placar 
-                será redefinido após isso. </p>
+            <p> Caso queira tentar com outras letras ou não existam palavras possíveis, clique no 
+                botão recarregar. O placar será redefinido após isso. </p>
 
-            <button id="ok"> Entendi </button>
+            <button id="ok" class="flex-center"> Entendi </button>
 
         </section>
         

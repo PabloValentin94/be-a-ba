@@ -168,3 +168,9 @@ document.getElementById("ok").onclick = function(){
     rules.style.transform = "translateY(100%)";
 
 }
+
+document.getElementById("reload").onclick = function(){
+
+    window.location.reload();
+
+}
